@@ -14,8 +14,8 @@ h1 {
 
 h2 {
   font-style: oblique;
-  text-decoration: line-through;
-  text-align: right;
+  text-decoration: solid;
+  text-align: center;
 }
 
 input[type='text'] {
@@ -30,7 +30,7 @@ p {
 }
 
 .bg-img {
-  height: 500px;
+  height: 20vh;
   width: 100%;
   background-color: rgb(39, 78, 78);
   background-image: url("https://images.unsplash.com/photo-1684861719108-23f67fb11c1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
@@ -39,3 +39,53 @@ p {
   background-position: center;
   background-attachment: fixed;
 }
+
+/* main{
+  padding: 7rem 0;
+} */
+
+.boxes {
+  /* height: calc(100vh - (7*2rem); */
+  height: calc(100vh);
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap; 
+  /* short hand ("forma abreviada"): o flex-flow substitui o direction e o wrap*/
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+ 
+}
+
+.box {
+  min-height: 10rem;
+  min-width: 20rem;
+  padding: 1.5rem;
+  border: 2px dashed rgb(189, 170, 181);
+  border-radius: 1rem;
+  background-color: blanchedalmond;
+  color:hotpink;
+  font-size: 4rem;
+  display: inline-block;
+}
+
+
+table{
+  background-color: bisque;
+  border-color: indianred;
+  border-style: ridge;
+  height: 10rem;
+  width: 20rem;
+}
+
+tr{
+  text-align: center;
+}
+
+td{
+  background-color: cornsilk;
+  color: black;
+}
+
