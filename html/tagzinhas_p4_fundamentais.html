@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
+
+    <!-- a tag head serve para por as predefinições do html -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>elementos semânticos</title>
 </head>
 <body>
-    
+    <!-- cabeçalho, texto, rodapé + barra lateral-->
+
+    <header>
+
+        <!-- barra de navegação, em síntese, surge da tag nav -->
+        <nav>
+                <!-- imagem de brand + link de referência à pg inicial põe uma / -->
+            <a href="/html/tagzinhas_p4_fundamentais.html">
+                <img src="/html/images/nala-pop.jpeg" alt="nala do pop" width="50"></a>
+
+                <ul>
+                    <li>
+                        <a href="/html/tagzinhas_p2.html"> nala's 2nd website</a>
+                    </li>
+                    <li>
+                        <a href="/html/portifolio.html">Portfólio</a>
+                    </li>
+
+                </ul>
+            
+        </nav>
+            
+    </header>
+            
+
+    <main>
+        <!-- conteúdo principal -->
+
+        <section id="about me">
+            <!-- o id gera um identificador único, só tem UM sobre mim etc -->
+            eu sou um gato
+            <figure>
+                <!-- é um div de imagem -->
+                <img src="https://avatars.githubusercontent.com/u/134225951?v=4" alt="eu de pop" width="400">
+                <figcaption>nala selvagem</figcaption>
+
+            </figure>
+        </section>
+
+        <section id="portfólio">
+            durmo 23h por dia, mas amo brincar de fiozinho 
+        </section>
+
+        <section id="blogui">
+
+            <article>
+                <!-- é repetível!!! -->
+                <header> pode por imagem </header>
+                <main> texto </main>
+                <footer> feito por bebella tal dia </footer>
+            </article>
+
+        </section>
+
+    </main>
+
+    <aside>
+        <!-- barra lateral, o aside pode ser dentro ou fora do main -->
+    </aside>
+
+    <footer>
+        Bebella's produções
+    </footer>
+
+<!-- a formatação/o visual da pg está no CSS, o html não muda isso, as tags são marcações semânticas para ocorrer as buscas, onde estão os elementos, se trata de cabeçalho? barra lateral? o html responde. -->
+
 </body>
 </html>
