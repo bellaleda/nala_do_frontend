@@ -15,7 +15,7 @@ let altura = 1.68 // number, independente de ser float, js entende igual
 let nome = 'Isabella' // texto=string
 let codando = true // boleano
 
-// vírgla: quero imprimir o que está antes e ouyta coisa tbm
+// ponto vírgla: quero imprimir o que está antes e outra coisa tbm
 console.log(number, typeof number)
 console.log(altura, typeof altura)
 console.log(nome, typeof nome)
