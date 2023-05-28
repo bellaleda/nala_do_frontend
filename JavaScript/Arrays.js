@@ -88,7 +88,7 @@ console.log(arr1.concat(arr2)) // leva a ordem escrita em consideração, comça
 
 console.clear()
 
-// Buscar elemento: indexOf | lastItemOf
+// Buscar elemento: indexOf | lastIndexOf
 console.log(arr1)
 let indiceDo34 = arr1.indexOf(34)
 
