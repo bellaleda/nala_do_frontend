@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+  }
+  
+  label {
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  input {
+    text-align: center;
+  }
+  
+  id:submit {
+    text-align: center;
+  }
