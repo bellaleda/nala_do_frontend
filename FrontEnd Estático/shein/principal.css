@@ -1,0 +1,15 @@
+#header{
+    position: relative;
+    height: 1.17rem;
+    padding: 0px 0.32rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid azure;
+}
+
+h1{
+    font-size: 30px;
+}
+
