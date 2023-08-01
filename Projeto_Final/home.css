@@ -65,8 +65,8 @@
 
 #navigation-bar-header {
     background-color: var(--magenta);
-    padding: 0.1rem 0;
-    border-radius: 12px 12px 0 0;
+    padding: 0 0;
+    border-radius: 20px 20px 0 0;
   }
   
 #navigation-bar-header ul {
@@ -74,20 +74,66 @@
   }
   
 #navigation-bar-header ul li {
-    transition: 200ms linear;
+    transition: 200ms ease;
   }
   
 #navigation-bar-header ul li:hover {
     scale: 1.1;
     cursor: pointer;
-    transition: 200ms linear;
+    transition: 200ms ease;
     text-decoration: overline;
-    font-weight: 600;
   }
+  
+#main,
+#main-edit {
+  width: 100%;
+}
+
+#main h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#main #title-main {
+  color: var(--magenta);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#title-main button {
+  color: var(--magenta);
+  transition: 250ms ease;
+  border: 1px solid var(--magenta);
+  text-decoration: none;
+}
+
+#title-main a:hover {
+  color: var(--magenta);
+  border: 3px solid var(--bege);
+  background-color: transparent;
+  transition: 250ms ease;
+  text-decoration: none;
+}
+
+#table {
+  background-color: var(--bege);
+  border-color: none;
+}
+
+#table th, td {
+  text-align: center;
+  border-color: none;
+}
+
+#table th, td:hover{
+  color: var(--coral);
+  cursor: pointer;
+}
   
 #footer section:last-child {
     background-color: var(--magenta);
-    border-radius: 0 0 12px 12px;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
     color: var(--ligther-bege);
     width: 100%;
   }
