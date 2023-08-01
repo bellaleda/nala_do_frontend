@@ -117,12 +117,12 @@
 
 #table {
   background-color: var(--bege);
-  border-color: none;
+  border-color: var(--ligther-bege);
 }
 
 #table th, td {
   text-align: center;
-  border-color: none;
+  border-color: var(--ligther-bege);
 }
 
 #table th, td:hover{
