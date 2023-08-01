@@ -1,8 +1,10 @@
+/* seletor univesal  */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
+  /* box-sizing: border-box; -> serve para padronizar o width, no sentido de considerar o tamanho da borda inclusa no tamanho desejado do box. então, se eu por um width: 150px, a borda será o limite do box, e o tamanho da borda em px estará dentro dos 150 px. Quando não se usa dessa forma, o width será aplicado apenas no content, não levando em consderação o tamanho do padding (se adicionado) nem da borda - de cada lado. o valor default é content-box, em que o width e height definirão apenas o tamanho do conteúdo e o padding e a borda serão jogados para fora da conta. */
   
   :root {
     --magenta: #5D2A42;
