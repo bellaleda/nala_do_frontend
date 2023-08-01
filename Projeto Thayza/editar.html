@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar / Adicionar</title>
+  </head>
+  <body id="body-edit" class="container-fluid h-100">
+    <header id="header-edit" class="header-container container-fluid">
+      <section
+        class="col d-flex align-items-center justify-content-between p-2"
+      >
+        <a href="home.html" class="d-flex gap-1 col-md-4">
+          <img
+            width="56"
+            src="./assets/logo.png"
+            alt="logomarca que demonstra um planeta azul com estrelas em suas diagonais"
+          />
+          <span>od-planet</span>
+        </a>
+        <article
+          class="input-group align-items-center col-md-6"
+          id="input-header"
+        >
+          <button
+            class="btn btn-outline-secondary border-dark d-flex"
+            type="button"
+          >
+            <i class="bi bi-search text-dark"></i>
+          </button>
+
+          <input
+            type="text"
+            class="form-control d"
+            placeholder="Buscar"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+        </article>
+      </section>
+      <nav id="navigation-bar-header" class="navbar navbar-expand-lg col-md-12">
+        <ul class="container-fluid d-flex justify-content-around pt-2">
+          <a href="home.html"><li class="text-light">Home</li></a>
+
+          <li class="text-light">Sobre</li>
+          <li class="text-light">Contato</li>
+          <li class="text-light">Outros</li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      id="main-edit"
+      class="h-100 container-fluid pb-4 rounded-bottom-2 d-flex flex-column align-items-center justify-content-center"
+    >
+      <section
+        id="title-main-edit"
+        class="container-fluid d-flex justify-content-center align-items-center pt-3"
+      >
+        <h1 class="text-center">Inserir / Adicionar cliente</h1>
+      </section>
+      <form
+        class="d-flex flex-column align-content-center w-75 mt-2"
+        id="form"
+        method="get"
+      >
+        <div class="form-group row mb-4">
+          <label for="name" class="col-sm-3 col-form-label">Nome</label>
+          <div class="col-sm-6">
+            <div class="center-input">
+              <input
+                maxlength="60"
+                required
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Digite seu nome"
+                name="name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group row mb-4">
+          <label for="date" class="col-sm-3 col-form-label"
+            >Data de Nascimento</label
+          >
+          <div class="col-sm-6">
+            <div class="center-input">
+              <input
+                type="date"
+                class="form-control"
+                id="date"
+                required
+                name="date"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group row mb-4">
+          <label for="email" class="col-sm-3 col-form-label">Email</label>
+          <div class="col-sm-6 center-input">
+            <input
+              required
+              maxlength="60"
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="example@email.com"
+              name="email"
+            />
+          </div>
+        </div>
+        <div class="form-group row mb-4">
+          <label for="sexo" class="col-sm-3 col-form-label">Sexo</label>
+          <div class="col-sm-6">
+              <select class="form-select" >
+                <option selected>Selecione uma opção</option>
+                <option value="1">Feminino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Não binário</option>
+                <option value="3">Prefiro não informar</option>
+             </select>
+            </div>
+        </div>
+      </form>
+      <section
+        id="btn-area"
+        class="d-flex justify-content-xl-end justify-content-lg-evenly justify-content-center container gap-5"
+      >
+        <a href="home.html">
+          <button type="button" class="btn btn-outline-danger font-weight-bold">
+            Cancelar
+          </button>
+        </a>
+        <button
+          type="submit"
+          class="btn btn-outline-success font-weight-bold"
+          data-bs-toggle="modal"
+          data-bs-target="#modal"
+        >
+          Salvar
+        </button>
+      </section>
+      <section
+        class="modal fade"
+        id="modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title text-success-emphasis"
+                id="exampleModalLabel"
+              >
+                SUCESSO ✔
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <article class="modal-body text-success-emphasis">
+              Cliente salvo com sucesso 🎉
+            </article>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="text-secondary container-fluid">
+      <section class="container-fluid mt-3">
+        <nav class="d-flex col justify-content-center">
+          <a class="btn btn-link btn-lg" href="#!" role="button"
+            ><i class="bi bi-facebook-f"></i
+          ></a>
+          <a class="btn btn-link btn-lg" href="#!" role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a class="btn btn-link btn-lg" href="#!" role="button"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a class="btn btn-link btn-lg" href="#!" role="button"
+            ><i class="bi bi-github"></i
+          ></a>
+          </nav>
+        </section>
+
+      <section class="container-fluid text-center p-3">
+        <div class="row justify-content-center">
+          <p class="col-auto m-0">© 2023 Copyright</p>
+          <a class="col-auto text-white-50" href="https://mdbootstrap.com/"></a>
+            Desenvolvido com Bootstrap por Thayza Oliveira</a
+          >
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
