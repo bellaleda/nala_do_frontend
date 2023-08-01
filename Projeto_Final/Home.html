@@ -22,11 +22,60 @@
     <title>Home Page</title>
 </head>
 
-<body>
-    <header>
-        
+<body id="container"
+class="container-fluid d-flex flex-column align-items-center">
+    <header id="header" class="container-fluid">
+        <section class="d-flex justify-content-between p-2 align-items-center">
+            <a href="home.html" class="d-flex gap-1" target="_self">
+                <img
+                    width="56"
+                    src="./favicon_io/android-chrome-512x512.png"
+                    alt="logomarca que demonstra uma letra h em minúsculo com fundo redondo e magenta"
+                />
+                <span>home page</span>
+            </a>
+            <article class="input-group align-items-center" id="input-header">
+                <button
+                  class="btn btn-outline-secondary border-dark d-flex"
+                  type="button"
+                >
+                  <i class="bi bi-search text-dark"></i>
+                </button>
+      
+                <input
+                  type="text"
+                  class="form-control d"
+                  placeholder="Barra de Pesquisa"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+              </article>
+            </section>
+        <nav
+            id="navigation-bar-header"
+            class="d-flex justify-content-center align-items-center shadow-5"
+            >
+            <ul class="container-fluid d-flex justify-content-around pt-2">
+              <li class="text-light">entrar</li>
+              <li class="text-light">novos cadastros</li>
+              <li class="text-light">histórico</li>
+              <li class="text-light">sobre nós</li>
+            </ul>
+          </nav>
+        </header>    
     </header>
     
+    
+    <footer
+      id="footer"
+      class="text-secondary container-fluid d-flex flex-column justify-content-center fixed-bottom position-fixed"
+    >
+      <section
+        class="container-fluid p-3 d-flex align-items-center justify-content-center gap-1"
+      >
+        <p class="mb-0">© 2023 Copyright nalaverso™</p>
+      </section>
+    </footer>
     
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

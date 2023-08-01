@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --magenta: #5D2A42;
+    --coral: #FB6376;
+    --light-rose: #FCB1A6;
+    --bege: #FFDCCC;
+    --ligther-bege: #FFF9EC
+  }
+  
+  body,
+  #body-edit,
+  #container,
+  #header,
+  #title-main button,
+  #footer {
+    background-color: var(--light-rose);
+    color: var(--coral);
+    font-family: 'Comfortaa', monospace;
+  }
+  
+  body a {
+    color: var(--magenta);
+    text-decoration: none;
+  }
+  
+#header-edit span,
+#header span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+#input-header,
+#input-header input {
+  width: 20%;
+  height: 35px;
+}
+
+#input-header {
+  width: fit-content;
+}
+
+#input-header button {
+  height: 105%;
+  background-color: var(--magenta);
+  transition: 200ms ease;
+}
+
+#input-header button:hover {
+  color: var(--bege);
+  filter: brightness(0.8);
+  transition: 400ms ease;
+}
+
+#input-header input {
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+}
+
+#navigation-bar-header {
+    background-color: var(--magenta);
+    padding: 0.1rem 0;
+    border-radius: 12px 12px 0 0;
+  }
+  
+#navigation-bar-header ul {
+    list-style: none;
+  }
+  
+#navigation-bar-header ul li {
+    transition: 200ms linear;
+  }
+  
+#navigation-bar-header ul li:hover {
+    scale: 1.1;
+    cursor: pointer;
+    transition: 200ms linear;
+    text-decoration: overline;
+    font-weight: 600;
+  }
+  
+#footer section:last-child {
+    background-color: var(--magenta);
+    border-radius: 0 0 12px 12px;
+    color: var(--ligther-bege);
+    width: 100%;
+  }
+
+/* links */
+a:link {
+    color: default;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: default;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: var(--bege);
+    background-color: transparent;
+    text-decoration: overline;
+  }
+  
+a:active {
+    color: var(--coral);
+    background-color: transparent;
+    text-decoration: overline;
+  }
