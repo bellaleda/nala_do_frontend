@@ -1,41 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Karla:wght@200&family=Pacifico&display=swap");
+
 /* seletor univesal  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-  }
-  /* box-sizing: border-box; -> serve para padronizar o width, no sentido de considerar o tamanho da borda inclusa no tamanho desejado do box. então, se eu por um width: 150px, a borda será o limite do box, e o tamanho da borda em px estará dentro dos 150 px. Quando não se usa dessa forma, o width será aplicado apenas no content, não levando em consderação o tamanho do padding (se adicionado) nem da borda - de cada lado. o valor default é content-box, em que o width e height definirão apenas o tamanho do conteúdo e o padding e a borda serão jogados para fora da conta. */
-  
-  :root {
-    --magenta: #5D2A42;
-    --coral: #FB6376;
-    --light-rose: #FCB1A6;
-    --bege: #FFDCCC;
-    --ligther-bege: #FFF9EC
-  }
-  
-  body,
-  #body-edit,
-  #container,
-  #header,
-  #title-main button,
-  #footer {
-    background-color: var(--light-rose);
-    color: var(--coral);
-    font-family: 'Comfortaa', monospace;
-  }
-  
-  body a {
-    color: var(--magenta);
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* box-sizing: border-box; -> serve para padronizar o width, no sentido de considerar o tamanho da borda inclusa no tamanho desejado do box. então, se eu por um width: 150px, a borda será o limite do box, e o tamanho da borda em px estará dentro dos 150 px. Quando não se usa dessa forma, o width será aplicado apenas no content, não levando em consderação o tamanho do padding (se adicionado) nem da borda - de cada lado. o valor default é content-box, em que o width e height definirão apenas o tamanho do conteúdo e o padding e a borda serão jogados para fora da conta. */
+
+:root {
+  --magenta: #5d2a42;
+  --coral: #fb6376;
+  --light-rose: #fcb1a6;
+  --bege: #ffdccc;
+  --ligther-bege: #fff9ec;
+}
+
+body,
+#body-edit,
+#container,
+#header,
+#title-main button,
+#footer {
+  background-color: var(--light-rose);
+  color: var(--coral);
+  font-family: "Comfortaa", monospace;
+}
+
+body a {
+  color: var(--magenta);
+  text-decoration: none;
+}
+
 #header-edit span,
 #header span {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
+  font-size: 30px;
+  font-weight: bold;
+}
+
 #input-header,
 #input-header input {
   width: 20%;
@@ -64,32 +66,32 @@
 }
 
 #navigation-bar-header {
-    background-color: var(--magenta);
-    padding: 0 0;
-    border-radius: 20px 20px 0 0;
-  }
-  
+  background-color: var(--magenta);
+  padding: 0 0;
+  border-radius: 20px 20px 0 0;
+}
+
 #navigation-bar-header ul {
-    list-style: none;
-  }
-  
+  list-style: none;
+}
+
 #navigation-bar-header ul li {
-    transition: 200ms ease;
-  }
-  
+  transition: 200ms ease;
+}
+
 #navigation-bar-header ul li:hover {
-    scale: 1.1;
-    cursor: pointer;
-    transition: 200ms ease;
-    text-decoration: overline;
-  }
-  
+  scale: 1.1;
+  cursor: pointer;
+  transition: 200ms ease;
+  text-decoration: overline;
+}
+
 #main,
 #main-edit {
   width: 100%;
 }
 
-#main h1{
+#main h1 {
   font-size: 30px;
   font-weight: bold;
   color: var(--magenta);
@@ -121,45 +123,66 @@
   border-color: var(--ligther-bege);
 }
 
-#table th, td {
+#table th,
+td {
   text-align: center;
   border-color: var(--ligther-bege);
 }
 
-#table th, td:hover{
+#table th,
+td:hover {
   color: var(--coral);
   cursor: pointer;
 }
-  
+
 #footer section:last-child {
-    background-color: var(--magenta);
-    padding: 0;
-    border-radius: 0 0 20px 20px;
-    color: var(--ligther-bege);
-    width: 100%;
-  }
+  background-color: var(--magenta);
+  padding: 0;
+  border-radius: 0 0 20px 20px;
+  color: var(--ligther-bege);
+  width: 100%;
+}
 
 /* links */
 a:link {
-    color: default;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
+  color: default;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 a:visited {
-    color: default;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
+  color: default;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 a:hover {
-    color: var(--bege);
-    background-color: transparent;
-    text-decoration: overline;
-  }
-  
+  color: var(--bege);
+  background-color: transparent;
+  text-decoration: overline;
+}
+
 a:active {
-    color: var(--coral);
-    background-color: transparent;
-    text-decoration: overline;
-  }
+  color: var(--coral);
+  background-color: transparent;
+  text-decoration: overline;
+}
+
+/* grid em CSS */
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-content: space-evenly;
+  grid-template-columns: auto;
+  gap: 5px 3px;
+  background-color: var(--magenta);
+  padding: 2px;
+}
+.grid-item {
+  background-color: var(--bege);
+  border: 1px solid var(--bege);
+  padding: 2px;
+  font-size: 20px;
+  text-align: center;
+}
